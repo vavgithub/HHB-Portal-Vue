@@ -34,7 +34,7 @@
         <InfoCard
           :icon="CircleDollarSign"
           title="Total Spend"
-          class="h-full md:justify-between md:gap-0"
+          class="h-full justify-between md:gap-0"
         >
           <div class="flex items-center justify-between">
             <h4>$2,200</h4>
@@ -43,7 +43,7 @@
         <InfoCard
           :icon="Package"
           title="Total Shipments"
-          class="h-full md:justify-between md:gap-0"
+          class="h-full justify-between md:gap-0"
         >
           <div class="flex items-center justify-between">
             <h4>52</h4>
@@ -63,7 +63,7 @@
       <InfoCard
         :icon="ClockArrowDown"
         title="On Time Dropoff"
-        class="md:justify-between md:gap-0"
+        class="justify-between md:gap-0"
       >
         <div class="flex items-center justify-between">
           <h4>67%</h4>
@@ -125,7 +125,7 @@
         <InfoCard
           :icon="HandCoins"
           title="Outstanding Balance"
-          class="h-full md:justify-between md:gap-0"
+          class="h-full justify-between md:gap-0"
         >
           <div class="flex items-center justify-between">
             <h4>$5200</h4>
@@ -134,7 +134,7 @@
         <InfoCard
           :icon="ClockArrowUp"
           title="On Time Pickup"
-          class="h-full md:justify-between md:gap-0"
+          class="h-full justify-between md:gap-0"
         >
           <div class="flex items-center justify-between">
             <h4>53%</h4>

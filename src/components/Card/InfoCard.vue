@@ -1,5 +1,5 @@
 <template>
-  <Card variant="primary" :class="['flex flex-col gap-4', className]">
+  <Card variant="primary" :class="['flex flex-col gap-4', className, $attrs.class]">
     <div class="flex items-center justify-between flex-shrink-0">
       <div class="flex items-center gap-2">
         <IconWrapper bgColor="bg-grayscale-150" :customSize="16" :icon="icon" />
@@ -11,7 +11,7 @@
         <div v-else-if="topRightContent">{{ topRightContent }}</div>
       </div>
     </div>
-    <div class="flex-1 min-h-0">
+    <div class="min-h-0">
       <slot />
     </div>
   </Card>
