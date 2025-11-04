@@ -1,0 +1,98 @@
+@import './styles/generated/variables.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--typography-font-family-satoshi);
+  box-sizing: border-box;
+  letter-spacing: 0.65px;
+}
+
+
+/* Button Primary */
+.button-primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  transition: background 0.2s, color 0.2s;
+}
+.button-primary:hover:not(:disabled):not(.button-primary-disabled) {
+  background-color: var(--button-primary-bg-hover);
+  color: var(--button-primary-text-hover);
+}
+.button-primary:disabled,
+.button-primary.button-primary-disabled {
+  background-color: var(--button-primary-bg-disabled);
+  color: var(--button-primary-text-disabled);
+  cursor: not-allowed;
+}
+
+/* Button Secondary */
+.button-secondary {
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+  transition: background 0.2s, color 0.2s;
+}
+.button-secondary:hover:not(:disabled):not(.button-secondary-disabled) {
+  background-color: var(--button-secondary-bg-hover);
+  color: var(--button-secondary-text-hover);
+}
+.button-secondary:disabled,
+.button-secondary.button-secondary-disabled {
+  background-color: var(--button-secondary-bg-disabled);
+  color: var(--button-secondary-text-disabled);
+  cursor: not-allowed;
+}
+
+.echarts-tooltip {
+  position: relative !important;
+}
+
+.echarts-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -6px; /* position arrow below */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.95) transparent transparent transparent;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+  }
+  .hover-class {
+    @apply hover:bg-accent-50 text-text-secondary transition-colors duration-200;
+  }
+  .selection-class {
+    @apply bg-accent-50 font-medium text-text-primary outline -outline-offset-1 outline-1 outline-accent-900;
+  }
+
+  h1 {
+    @apply text-h1 font-medium leading-[1.1];
+  }
+  h2 {
+    @apply text-h2 font-medium leading-[1.2];
+  }
+  h3 {
+    @apply text-h3 font-medium leading-[1.2];
+  }
+  h4 {
+    @apply text-h4 font-medium leading-[1.2];
+  }
+  h5 {
+    @apply text-h5 font-medium leading-[1.2];
+  }
+  h6 {
+    @apply text-h6 font-medium leading-[1.5];
+  }
+  p {
+    @apply text-body font-normal leading-[1.5] text-text-secondary;
+  }
+}
