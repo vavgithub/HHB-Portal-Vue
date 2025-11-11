@@ -37,7 +37,7 @@
 }
 .button-secondary:hover:not(:disabled):not(.button-secondary-disabled) {
   background-color: var(--button-secondary-bg-hover);
-  color: var(--button-secondary-text-hover);
+  color: var(--button-secondary-text);
 }
 .button-secondary:disabled,
 .button-secondary.button-secondary-disabled {

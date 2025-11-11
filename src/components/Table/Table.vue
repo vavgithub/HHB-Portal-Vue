@@ -1,5 +1,5 @@
 <template>
-  <div style="overflowX: auto" class="scrollbar-hide">
+  <div style="overflow-x: auto" class="scrollbar-hide">
     <table :style="{ width: '100%', minWidth: minWidth }">
       <thead class="rounded-xl overflow-hidden">
         <tr>

@@ -27,6 +27,12 @@
           :noLegend="true"
           :stackData="stackData"
         />
+        <!-- <D3Chart
+          minWidth="600px"
+          :xAxisData="['ITF LLC', 'Dado Transports', 'PQR Transports', 'Road Freight Inc.', 'Maize LLC']"
+          :noLegend="true"
+          :stackData="stackData"
+        /> -->
       </InfoCard>
 
       <!-- Second Card -->
@@ -104,6 +110,7 @@
       >
         <div class="h-full">
           <GaugeChart :value="4200.00" :max="5000" guageTitle="Credit Limit" />
+          <!-- <D3Guage :value="4200.00" :max="5000" guageTitle="Credit Limit" /> -->
         </div>
       </InfoCard>
 
@@ -202,6 +209,8 @@ import PieChart from '../../components/Charts/PieChart.vue'
 import Badge from '../../components/Badge/Badge.vue'
 import Container from '../../components/Wrapper/Container.vue'
 import { useIsMedium } from '../../composables/useMediaQuery'
+import D3Chart from '../../components/Charts/d3Chart.vue'
+import D3Guage from '../../components/Charts/d3Guage.vue'
 
 const isMedium = useIsMedium()
 

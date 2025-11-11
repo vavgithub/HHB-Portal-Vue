@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AdminLayout from '../components/Layout/AdminLayout.vue'
 import Dashboard from '../pages/admin/Dashboard.vue'
+import Loads from '../pages/admin/Loads.vue'
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
         path: 'carrier',
         name: 'Carrier',
         component: Dashboard
+      },
+      {
+        path: 'loads',
+        name: 'Loads',
+        component: Loads
       }
     ]
   }
