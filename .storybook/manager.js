@@ -5,6 +5,6 @@ import { create } from 'storybook/theming';
 addons.setConfig({
   theme: create({
     base: 'light',
-    brandImage: '/hhb-logo.png',
+    brandImage: '/hhb-logo.png', 
   }),
 });
